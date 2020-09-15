@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Functions</h2>
+
+    <p>Write a function that calculates students grade and percent of total possible score. 
+        - Function should take two parameters, score and total possible score
+        - Function should return result string, i.e. for 15/20 it should return: "You got a C (75%)!"
+        - Following % ranges should be used for calculating grade letter: A 90-100, B 80-89, C 70-79, D 60-69, F 0-59
+        - Invoke the function with some arguments and log result in the console
+        Save your function as HTML file (exercise3.html).</p>  
+
+        <script>
+            function calculatesStudents(grade, percent) {
+    
+            if(percent <= 100){
+            console.log(  "Student grade is " + grade);
+            }
+            else if ( percent <=89){
+            console.log("Student grade is " + grade );
+           }
+           else if (percent >=70){
+            console.log( "Student grade is " + grade);
+           }
+           else if (percent >=69){
+            console.log("Student grade is " + grade);
+           }
+           else if (percent <=59){
+            console.log( "Student grade is " + grade );
+           }
+           else{console.log("You got a C (75%)!") }
+         }
+              calculatesStudents("A",89);
+              </script>
+</body>
+</html>
